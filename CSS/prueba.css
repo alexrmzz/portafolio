@@ -1,0 +1,26 @@
+.card{
+    height: 20rem;
+    width: 15rem;
+    text-align: center;
+    .bi{
+        font-size: 4rem;
+        color: rgba(0, 96, 96,0.8);
+    }
+    .card-title{
+        font-size: 1.4rem;
+        color: rgba(0, 96, 96,0.8);
+    }   
+    .card-text{
+        font-size: 1rem;
+    }   
+}
+.card:hover{
+    transform: scale(1.015);
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    .bi, .card-title{
+        color: rgb(9, 73, 126);
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo.png">
+    <!-- Estilos CSS Files -->
+    <link rel="stylesheet" href="./aos/aos.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+            <img src="./img/logo.png" class="logo" style="margin-right: 15px;">
+            <a class="navbar-brand" href="#">Alex Rmz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="margin-right: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio" onclick="seleccionar()">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremi" onclick="seleccionar()">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" onclick="seleccionar()">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="bx bx-moon" id="darkMode-icon"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenido-img">
+                    <img src="./img/Alex.png" alt="">
+                </div>
+                <h1>Jorge Alejandro Ramírez Silva</h1>
+                <h2>Licenciado en Tecnologías de la Información</h2>
+                <h2>Universidad Simón Bolívar</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/alex.rmz.10200"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/_alxrmz"><i class="fab fa-twitter"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5531041099"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Alex Rmz.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                17-05-2003
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                +52 55 3104 1099
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                alexrmz1719@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fas fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fas fa-headphones"></i>
+                                <span>MÚSICA</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fas fa-plane"></i>
+                                <span>VIAJAR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="window.open('./CV JARS.pdf')">
+                    Descargar CV <i class="fas fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </section>
+         <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <!-- Agrega contenido relevante al footer, como información de contacto o enlaces adicionales. -->
+    </footer>
+    <script src="./aos/aos.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/myscript.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
